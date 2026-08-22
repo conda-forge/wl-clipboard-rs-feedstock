@@ -27,10 +27,11 @@ requirements:
 
 tests:
   - package_contents:
-      files:
-        - bin/wl-paste
-        - bin/wl-copy
-        - bin/wl-clip
+      bin:
+        - wl-paste
+        - wl-copy
+        - wl-clip
+      strict: true
 
 about:
   homepage: https://github.com/YaLTeR/wl-clipboard-rs
