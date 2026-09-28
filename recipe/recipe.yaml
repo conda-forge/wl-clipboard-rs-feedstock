@@ -1,6 +1,6 @@
 context:
   name: wl-clipboard-rs
-  version: "0.9.3"
+  version: "0.9.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/YaLTeR/wl-clipboard-rs/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 09566b20a9bab12e2709f828f908a0756a55625f567a51917388ec8b69547c77
+  sha256: ce408c2b696e66eb4ced95a049b7b20aeece9f117f203af4080b9e50cbbb837b
 
 build:
   number: 0
