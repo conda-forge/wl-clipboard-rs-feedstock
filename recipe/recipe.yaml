@@ -11,7 +11,7 @@ source:
   sha256: ade1ad0be25fc453a654cada52c23f1a998f0b60b043669f33c05b811e0dced9
 
 build:
-  number: 0
+  number: 1
   skip: not linux
   script:
     - cargo auditable install --locked --no-track --bins --root $PREFIX --path ./wl-clipboard-rs-tools
@@ -27,10 +27,11 @@ requirements:
 
 tests:
   - package_contents:
-      files:
-        - bin/wl-paste
-        - bin/wl-copy
-        - bin/wl-clip
+      bin:
+        - wl-paste
+        - wl-copy
+        - wl-clip
+      strict: true
 
 about:
   homepage: https://github.com/YaLTeR/wl-clipboard-rs
